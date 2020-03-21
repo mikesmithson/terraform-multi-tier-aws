@@ -8,4 +8,8 @@ output "sg" {
     db     = module.db_sg.security_group.id
     websvr = module.websvr_sg.security_group.id
   }
-}      
+} 
+
+output "db_password" {
+  value = module.database.db_config.password
+}
